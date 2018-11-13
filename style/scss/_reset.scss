@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+	box-sizing:border-box;
+	border: 1px solid red;
+}
+
+body {
+	margin:0;
+}
+
+html {
+	font-size: 16px;
+}
+@font-face {
+    font-family: 'Black Jack';
+    src: url('../fonts/BlackJack.eot');
+    src: url('../fonts/BlackJack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BlackJack.woff2') format('woff2'),
+        url('../fonts/BlackJack.woff') format('woff'),
+        url('../fonts/BlackJack.ttf') format('truetype'),
+        url('../fonts/BlackJack.svg#BlackJack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

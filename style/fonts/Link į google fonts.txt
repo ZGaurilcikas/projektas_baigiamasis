@@ -1,0 +1,4 @@
+link href=httpsfonts.googleapis.comcssfamily=Kaushan+ScriptNova+Slim&amp;subset=latin-ext rel=stylesheet
+
+font-family: 'Kaushan Script', cursive;
+font-family: 'Nova Slim', cursive;
