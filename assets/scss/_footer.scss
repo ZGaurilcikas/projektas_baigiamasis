@@ -1,0 +1,32 @@
+.apacia {
+	background-image: url(../images/center.jpg);
+	background-size: cover;
+	min-height: 20vh;
+	position: relative;
+	z-index: 1;
+	
+	
+}
+.poz .container {
+	justify-content:center;
+	padding: 100px;
+	border: 0px solid white;	
+	border-radius: 50px;
+	background-color: white;
+	
+}
+.section-poz i {
+	margin:20px;
+	padding:30px;
+	border: 2px solid black;
+	border-radius: 100px;
+
+}
+.about3 {
+	background-color: #e5e4e4;
+}
+.copyright {
+	font-size: .5rem;
+	color: black;
+	text-align: center;
+}

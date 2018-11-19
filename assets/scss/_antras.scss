@@ -1,0 +1,140 @@
+
+.antras .container {
+  flex-wrap:wrap;
+  position: relative;
+  background-color: #FFFFFF;
+}
+.picture {
+  padding: 10px;
+  width: 33.33%;
+  flex-direction:row;
+  border-left: 1px solid #14af8f;
+  border-top: 1px solid #14af8f;
+  border-radius: 30px;
+}
+
+.picture_img{
+  width: 70%;
+  margin: 0;
+
+}
+.picture_text{
+	width: 30%;
+}
+.picture img {
+	width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+.imdb-logo {
+  font: 1.5em Impact, HelveticaNeue-CondensedBold, sans-serif; // change the font size to whatever
+  color: #000;
+  text-shadow: 0 0 .15em #fff;
+  text-decoration: none;
+
+  display: inline-block;
+  text-align: center;
+  padding: .10em .25em;
+  border-radius: .15em;
+  background: radial-gradient(#ffffb8, #ce981d);
+  margin: 0.5em;
+
+    
+  &:hover {
+    background: radial-gradient(lighten(#ffffb8, 10%), lighten(#ce981d, 10%));
+  }
+
+}
+
+.picture h2{
+  text-align: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    // overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    // overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
+
+  }
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#myBtn {
+   background-color: white;
+    color: white;
+    // padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 ;
+    cursor: zoom-in;
+    transition: transform .2s;
+
+}
+#myBtn:hover {
+    -ms-transform: scale(1.06); /* IE 9 */
+    -webkit-transform: scale(1.06); /* Safari 3-8 */
+    transform: scale(1.06);
+
+}
+.overlay {
+  // position: absolute; 
+  bottom: 0; 
+  background-color: black;
+  background: white; /* Black see-through */
+  color: black; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 20px;
+  // padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0;
+}
+.picture_img :hover .overlay {
+  opacity: 1;
+}
