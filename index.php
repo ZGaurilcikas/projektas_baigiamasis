@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-
-<html> 
-<head>
-	<?php include 'header.php';?> 
-</head>
+<?php include 'header.php';?> 
 	<body>
 		<section class="about">
-			<div class="container flex-container">
+			<div class="container flex-container testavimas" data-animation-classes="animated fadeInUp"">
 				<div class="section-heading">
 					<h2>A Longwinded header</h2>
 					<p>She'll be right paddock how lets throw a ciggies. She'll be right ute to built like a doovalacky. We're going rack off bloody she'll be right pash. You little ripper tucker also get a dog up ya greenie.</p>
@@ -21,7 +16,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about2">
+		<section class="about2 testavimas"  data-animation-classes="animated fadeInUp">
 			<div class="container flex-container">
 				<div class="section-heading">
 					<h2>Get a Dog Up Ya’</h2>
@@ -48,5 +43,4 @@
 			</div>
 		</section>
 		<?php include 'footer.php';?>
-	</body>
-</html>
+		

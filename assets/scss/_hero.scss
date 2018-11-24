@@ -1,10 +1,30 @@
+.logo1 {	
+	background-color: #fff;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	color: white;
+	margin: 0 0 0 50px;
+	@include box-shadow1();
+	
+
+}
+.logo1 a {
+	text-decoration: none;
+}
+.logo1 h2 {
+	padding: 30px;
+
+}
+.logo1:hover{
+	@include hover-sizing();
+}
 .hero{
 	background-image: url(../images/hero.jpg);
 	background-size: cover;
 	background-position: center;
 	color: #fff;
 	min-height: 90vh;
-
 }
 .hero h1,
 .hero h2,
@@ -18,13 +38,14 @@
 .hero h1{
 	font-family: 'Black Jack';
 	font-size: 3rem;
-	font-weight: 900; /* extra bold arba black */
+	font-weight: 900; 
 	color: #282828;
 }
 
-.hero h2{
+h2{
 	font-size: 2rem;
 	color: #484848;
+	font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .hero h3{

@@ -1,8 +1,42 @@
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .flex-container {
 	display: flex;
+}
+section:not(.hero){
+	background-color: white;
+	position: relative;
+}
+
+@mixin box-shadow1(){
+	-webkit-box-shadow: 32px 24px 7px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 32px 24px 7px -11px rgba(0,0,0,0.75);
+    box-shadow: 32px 24px 7px -11px rgba(0,0,0,0.75);
+
+} 
+@mixin hover-sizing(){
+ -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+@mixin radius1(){
+	border-top: 4px solid #14af8f;
+	border-left: 2px solid #14af8f;
+	border-right: 4px solid  #ea4c89;
+	border-bottom: 2px solid  #ea4c89;
 }

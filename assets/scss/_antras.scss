@@ -1,19 +1,36 @@
-
+.antras {
+  background-color: white;
+}
 .antras .container {
   flex-wrap:wrap;
   position: relative;
   background-color: #FFFFFF;
 }
+.sorting {
+  width: 100%;
+
+}
+.sorting_poz {
+  justify-content:flex-end;
+}
+.custom_select value {
+  border-radius: 5px;
+}
 .picture {
+  margin: 9px;
   padding: 10px;
-  width: 33.33%;
+  width: 30%;
   flex-direction:row;
   border-left: 1px solid #14af8f;
   border-top: 1px solid #14af8f;
-  border-radius: 30px;
-}
+  background-color: white;
+  border-radius: 5px;
+  @include box-shadow1(); 
+  
 
+}
 .picture_img{
+  position: relative;
   width: 70%;
   margin: 0;
 
@@ -23,7 +40,7 @@
 }
 .picture img {
 	width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
   display: block;
 }
 .imdb-logo {
@@ -31,7 +48,6 @@
   color: #000;
   text-shadow: 0 0 .15em #fff;
   text-decoration: none;
-
   display: inline-block;
   text-align: center;
   padding: .10em .25em;
@@ -42,6 +58,7 @@
     
   &:hover {
     background: radial-gradient(lighten(#ffffb8, 10%), lighten(#ce981d, 10%));
+    @include hover-sizing();
   }
 
 }
@@ -49,92 +66,58 @@
 .picture h2{
   text-align: center;
 }
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 4; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    // overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 4; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    // overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 0 auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 20px;
-    width: 50%; /* Could be more or less, depending on screen size */
-
-  }
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-#myBtn {
+.button_youtube {
    background-color: white;
     color: white;
-    // padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 0 ;
     cursor: zoom-in;
-    transition: transform .2s;
+    transition: transform .8s;
+
 
 }
-#myBtn:hover {
-    -ms-transform: scale(1.06); /* IE 9 */
-    -webkit-transform: scale(1.06); /* Safari 3-8 */
-    transform: scale(1.06);
+.button_youtube:hover {
+    @include hover-sizing();
 
 }
 .overlay {
-  // position: absolute; 
-  bottom: 0; 
-  background-color: black;
-  background: white; /* Black see-through */
-  color: black; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: black;
-  font-size: 20px;
-  // padding: 20px;
-  text-align: center;
-  border-radius: 20px;
+  position: absolute; 
+  top: 15%; 
+  color: #ff4d4d; 
+  width: 20%;
+  transition: opacity .5s ease;
+  opacity: 0;
+  font-size: 20%;
+  border-radius: 10px;
   margin: 0;
+  font-size: 25px;
+
 }
-.picture_img :hover .overlay {
+.button_youtube:hover .overlay {
   opacity: 1;
+  cursor: pointer;
+}
+.custom-select onchange {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+.custom-select {
+    background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+    height: 34px;
+    width: 240px;
+    @include box-shadow1();
+}
+
+.custom-select select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
 }
