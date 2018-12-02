@@ -7,18 +7,25 @@
 .flex-container {
 	display: flex;
 }
+
 section:not(.hero){
 	background-color: white;
 	position: relative;
 }
-
-@mixin box-shadow1(){
+h2{
+	font-size: 1.5rem;
+	color: #484848;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+//placeholderis
+.box-shadow1{
 	-webkit-box-shadow: 32px 24px 7px -11px rgba(0,0,0,0.75);
     -moz-box-shadow: 32px 24px 7px -11px rgba(0,0,0,0.75);
     box-shadow: 32px 24px 7px -11px rgba(0,0,0,0.75);
 
 } 
-@mixin hover-sizing(){
+//placeholderis
+.hover-sizing{
  -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
   -webkit-animation-duration: .3s, 1.5s;
@@ -34,9 +41,13 @@ section:not(.hero){
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
-@mixin radius1(){
+//placeholderis
+.radius1{
 	border-top: 4px solid #14af8f;
 	border-left: 2px solid #14af8f;
 	border-right: 4px solid  #ea4c89;
 	border-bottom: 2px solid  #ea4c89;
 }
+
+
+

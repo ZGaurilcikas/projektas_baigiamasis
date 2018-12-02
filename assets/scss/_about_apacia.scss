@@ -4,7 +4,7 @@
 .about2 .container {
 	overflow:hidden;
 	position: relative;
-	min-height: 110vh;
+	min-height: 100vh;
 	
 }
 .about2 {
@@ -16,8 +16,6 @@
 	font-weight: 400;
 	line-height: 1;
 	margin: 0;
-	
-
 }
 
 .about2 .section-heading p{
@@ -29,22 +27,22 @@
 
 .about2 .section-heading {
 	background-color: #fff;
-	padding: 4.125rem 1.562rem 0 37.5rem;
-	border-radius: .937rem 3.125rem 0 3.125rem;
-	border-right: .125rem solid  #ea4c89;
-	border-top: .312 solid  #ea4c89;
-	min-height: 100vh;
+	padding: 50px 5px 300px 600px;
+	border-radius: 3px 3px 0 5px;
+	border-right: 1px solid  #ea4c89;
+	border-top: 1px solid  #ea4c89;
+	
 }
 .about2 a {
-	padding: 1.562rem;
+	padding: 25px;
 	display: inline-block;
 	color: #ea4c89;
-	border: .312rem solid #ea4c89;
-	border-radius: 1.875rem;
+	border: 5px solid #ea4c89;
+	border-radius: 25px;
 	transition: 0.9s;
 }
 .about2 a:hover {
-	@include hover-sizing();
+	@extend .hover-sizing;
 }
 .breaking_bad {
 	position: absolute;

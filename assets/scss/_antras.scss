@@ -3,12 +3,13 @@
 }
 .antras .container {
   flex-wrap:wrap;
+  justify-content:center;
   position: relative;
   background-color: #FFFFFF;
+
 }
 .sorting {
   width: 100%;
-
 }
 .sorting_poz {
   justify-content:flex-end;
@@ -25,7 +26,7 @@
   border-top: 1px solid #14af8f;
   background-color: white;
   border-radius: 5px;
-  @include box-shadow1(); 
+  @extend .box-shadow1; 
   
 
 }
@@ -46,19 +47,18 @@
 .imdb-logo {
   font: 1.5em Impact, HelveticaNeue-CondensedBold, sans-serif; // change the font size to whatever
   color: #000;
-  text-shadow: 0 0 .15em #fff;
+  text-shadow: 0 0 2px #fff;
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  padding: .10em .25em;
-  border-radius: .15em;
+  padding: 1px 1px;
+  border-radius: 2px;
   background: radial-gradient(#ffffb8, #ce981d);
-  margin: 0.5em;
+  margin: 1px;
 
-    
   &:hover {
     background: radial-gradient(lighten(#ffffb8, 10%), lighten(#ce981d, 10%));
-    @include hover-sizing();
+    @extend .hover-sizing;
   }
 
 }
@@ -76,12 +76,9 @@
     margin: 0 ;
     cursor: zoom-in;
     transition: transform .8s;
-
-
 }
 .button_youtube:hover {
-    @include hover-sizing();
-
+    @extend .hover-sizing;
 }
 .overlay {
   position: absolute; 
@@ -94,30 +91,28 @@
   border-radius: 10px;
   margin: 0;
   font-size: 25px;
-
 }
+
 .button_youtube:hover .overlay {
   opacity: 1;
   cursor: pointer;
 }
-.custom-select onchange {
-   background: transparent;
-   border: none;
-   font-size: 14px;
-   height: 29px;
-   padding: 5px; /* If you add too much padding here, the options won't show in IE */
-   width: 268px;
-}
-.custom-select {
-    background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
-    height: 34px;
-    width: 240px;
-    @include box-shadow1();
-}
 
-.custom-select select {
-   border: 1px solid #ccc;
-   font-size: 16px;
-   height: 34px;
-   width: 268px;
+select {
+  background-color: white;
+  border-left: 1px solid #14af8f;
+  border-top: 1px solid #14af8f;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+ 
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }

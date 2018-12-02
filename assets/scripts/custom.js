@@ -1,12 +1,11 @@
 "use strict";
 console.log("JSs");
 
-function alerts() {
-    alert("tai kiek galima?");
-
-};
-
-
+$(document).ready(function(){
+        $('.burger').click(function(){
+          $('.nav').toggleClass('show');
+        });
+      });
 
 
 // Funkcija pakelianti langą į viršų
@@ -89,7 +88,7 @@ function sortListImdb(){
       b1 = parseFloat(list[i + 1].dataset.rating);
 
       shouldSwitch = false; 
-      if (b > b1){ 
+      if (b < b1){ 
         shouldSwitch = true;
         break;
       }
@@ -105,7 +104,7 @@ function sortListImdb(){
 
 
 
-// $(window).on("scroll resize", function(){
+//funkcija pridedanti fadein anmaciją, schrolinimo metu
   ;(function($, win) {
   $.fn.inViewport = function(cb) {
      return this.each(function(i,el){
@@ -122,7 +121,6 @@ function sortListImdb(){
     if(px) $(this).addClass($(this).data("animation-classes")) ; console.log($(this).data("animation-classes"));
 });
 
-// });
 
 
 
