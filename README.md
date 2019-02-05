@@ -1,4 +1,4 @@
-#Antraštė
+WEB creating course
 
-## Mažesnė antraštė
+## Site created by using only css and html. No framework. Also few JS function. 
 
